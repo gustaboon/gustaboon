@@ -1,0 +1,6 @@
+# swp files
+*.swp
+
+# python things
+*.pyc
+
