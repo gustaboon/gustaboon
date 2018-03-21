@@ -9,6 +9,9 @@
 html {
     font-size: 62.5%;
 }
+body {
+    font-family: sans-serif;
+}
 
 .page-title {
     display: block;
@@ -39,6 +42,7 @@ html {
 
 .box {
     border: 1px solid #000000;
+    border-radius: 4px;
     width: 5rem;
     height: 5rem;
     margin: 2rem;
@@ -55,4 +59,22 @@ html {
     background-color: orange;
     box-shadow: 0 2px 10px rgba(9,0,0,.3);
 }
-
+.roll-em {
+    border: 2px solid white;
+    border-radius: 4px;
+    padding: 1rem;
+    animation: rainbow 20s infinite;
+    animation-direction: alternate;
+    font-size: 2.5rem;
+    font-weight: 700;
+    outline: none;
+    -webkit-animation: rainbow 2s infinite;
+}
+@keyframes rainbow {
+    0%   { background: red; color: white; }
+    15%  { background: orange; color: black; }
+    30%  { background: yellow; }
+    55%  { background: green; color: white }
+    70% { background: blue; }
+    100% { background: violet; color: black }
+}
