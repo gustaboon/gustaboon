@@ -26,6 +26,10 @@ html {
     justify-content: center;
 }
 
+.score {
+    display: flex;
+    justify-content: center; 
+}
 .roll-em {
     display: block;
     text-align: center;
