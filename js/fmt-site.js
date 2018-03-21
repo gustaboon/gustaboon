@@ -7,7 +7,9 @@ function getRandomInt(min, max) {
 function getScore() {
 	activeScore = 0;
 	for (i=0; i<dice.length; i++){
+		if(dice[i].innerHTML){
 		activeScore += parseInt(dice[i].innerHTML);
+		}
 	}
 	scoreBox.innerHTML = activeScore;	
 }
