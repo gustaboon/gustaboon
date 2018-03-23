@@ -9,10 +9,20 @@
 html {
     font-size: 62.5%;
 }
+
 body {
     font-family: sans-serif;
 }
 
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content {
+    height: 100vh;
+    backround-color: red;
+}
 .page-title {
     display: block;
     text-align: center;
@@ -78,14 +88,6 @@ body {
 }
 
 @keyframes rainbow {
-    0%   { background: red; color: white; }
-    15%  { background: orange; color: black; }
-    30%  { background: yellow; }
-    55%  { background: green; color: white }
-    70% { background: blue; }
-    100% { background: violet; color: black }
-}
-@-webkit-keyframes rainbow {
     0%   { background: red; color: white; }
     15%  { background: orange; color: black; }
     30%  { background: yellow; }
