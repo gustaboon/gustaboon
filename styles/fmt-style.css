@@ -9,10 +9,20 @@
 html {
     font-size: 62.5%;
 }
+
 body {
     font-family: sans-serif;
 }
 
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content {
+    height: 100vh;
+    backround-color: red;
+}
 .page-title {
     display: block;
     text-align: center;
@@ -89,4 +99,22 @@ body {
     55%  { background: green; color: white }
     70% { background: blue; }
     100% { background: violet; color: black }
+}
+
+.new-feature {
+    font-size: 14px;
+    text-align: center;
+    transform: skew(10deg) rotate(10deg);
+    animation: wow 1s infinite alternate;
+}
+@keyframes wow {
+    0% {
+        transform: skew(10deg) rotate(10deg) scale(1);
+    }
+    0% {
+        transform: skew(0deg) rotate(20deg) scale(1.2);
+    }
+    100% {
+        transform: skew(10deg) rotate(10deg) scale(1);
+    }
 }
