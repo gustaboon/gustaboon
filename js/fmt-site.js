@@ -15,16 +15,28 @@ function getScore() {
 }
 
 function dieRoll() {
-	this.innerHTML = getRandomInt(1, 7);
+    max = getDiceVal("diceSides", 4)
+	this.innerHTML = getRandomInt(1, max+1);
 	getScore();
 }
 
 
 function rollem() {
+    max = getDiceVal("diceSides", 4)
 	for (i = 0; i<dice.length; i++){
-    	dice[i].innerHTML = getRandomInt(1, 7);
+    	dice[i].innerHTML = getRandomInt(1, max+1);
 	}
 	getScore();
+}
+
+function getDiceVal(textId, min=1, max=20) {
+    var diceVal = parseInt(document.getElementById(textId).value);
+    if (isNaN(diceVal) || diceVal < min) {
+        diceVal = min
+    } else if (diceVal > max) {
+        diceVal = max
+    }
+    return diceVal
 }
 
 var activeScore = 0;
