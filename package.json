@@ -1,0 +1,29 @@
+{
+  "name": "gustaboon",
+  "version": "1.0.0",
+  "description": "Gustaboon Projects",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss styles/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/somesang/gustaboon.git"
+  },
+  "keywords": [
+    "Everyone",
+    "gets",
+    "a",
+    "web",
+    "dev"
+  ],
+  "author": "Gustaboon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/somesang/gustaboon/issues"
+  },
+  "homepage": "https://github.com/somesang/gustaboon#readme",
+  "dependencies": {
+    "npm-sass": "^2.2.1"
+  }
+}

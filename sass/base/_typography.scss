@@ -1,0 +1,51 @@
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 3.6rem;
+}
+h3 {
+    font-size: 3rem;
+}
+h4 {
+    font-size: 2.6rem;
+}
+h5 {
+    font-size: 2.2rem;
+}
+h6 {
+    font-size: 1.8rem;
+}
+p, a {
+    font-size: 2rem;
+}
+// Lists
+ul {
+    list-style: none;
+}
+li {
+    margin-left: 1rem;
+}
+
+// General
+.page-title {
+    padding: 2rem 0;
+}
+.headline {
+    padding: 1.8rem 0;
+}
+
+// Links
+.link {
+    text-decoration: none;
+    transition: .4s all;
+    &:visited {
+        color: blue;
+    }
+    &:hover {
+        color: crimson;
+    }
+    &__repo {
+        font-size: 1.2rem;
+    }
+}
