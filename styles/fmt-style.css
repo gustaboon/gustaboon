@@ -24,6 +24,12 @@ body {
     color: #FF0000;
 }
 
+.die-settings {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
 .dice-bag {
     display: flex;
     justify-content: center;
@@ -65,9 +71,8 @@ body {
     font-size: 2.5rem;
     font-weight: 700;
     outline: none;
-    animation: rainbow 20s infinite;
+    animation: rainbow 2s infinite;
     animation-direction: alternate;
-    -webkit-animation: rainbow 2s infinite;
     transition: .2s transform;
 }
 .roll-em:hover {
@@ -78,14 +83,6 @@ body {
 }
 
 @keyframes rainbow {
-    0%   { background: red; color: white; }
-    15%  { background: orange; color: black; }
-    30%  { background: yellow; }
-    55%  { background: green; color: white }
-    70% { background: blue; }
-    100% { background: violet; color: black }
-}
-@-webkit-keyframes rainbow {
     0%   { background: red; color: white; }
     15%  { background: orange; color: black; }
     30%  { background: yellow; }
