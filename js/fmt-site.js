@@ -15,28 +15,38 @@ function getScore() {
 }
 
 function dieRoll() {
-    max = getDiceVal("diceSides", 4)
+    max = getDiceVal("diceSides", 4);
 	this.innerHTML = getRandomInt(1, max+1);
 	getScore();
 }
 
 
 function rollem() {
-    max = getDiceVal("diceSides", 4)
+    createDice(getDiceVal("diceNum", 1, 100));
+    max = getDiceVal("diceSides", 4);
 	for (i = 0; i<dice.length; i++){
     	dice[i].innerHTML = getRandomInt(1, max+1);
+        dice[i].onclick = dieRoll;
 	}
 	getScore();
+}
+
+function createDice(numOfDice) {
+    var boxHTML = '<div class="box"></div>';
+    for (i = 1; i < numOfDice; i++) {
+        boxHTML += '<div class="box"></div>';
+    }
+    document.getElementById('purse').innerHTML = boxHTML;
 }
 
 function getDiceVal(textId, min=1, max=20) {
     var diceVal = parseInt(document.getElementById(textId).value);
     if (isNaN(diceVal) || diceVal < min) {
-        diceVal = min
+        diceVal = min;
     } else if (diceVal > max) {
-        diceVal = max
+        diceVal = max;
     }
-    return diceVal
+    return diceVal;
 }
 
 var activeScore = 0;
